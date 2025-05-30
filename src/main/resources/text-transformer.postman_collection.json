@@ -1,0 +1,39 @@
+{
+  "info": {
+    "name": "Text Transformer API",
+    "_postman_id": "12345678-abcd-efgh-ijkl-1234567890ab",
+    "description": "Testovanie REST služby pre transformáciu textu",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "POST /transform",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"text\": \"Ahoj, jak se máš?\"}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/transform",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "transform"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
